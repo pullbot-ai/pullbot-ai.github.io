@@ -1,0 +1,29 @@
+name: Train Pullbot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *'
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - name: Install deps
+      run: pip install torch requests
+    - name: Scrape data
+      run: python src/scraper.py
+    - name: Train model
+      run: python src/model.py
+    - name: Push
+      run: |
+        git config user.name "Pullbot"
+        git config user.email "pullbot@bot.dev"
+        git add -A
+        git diff --staged --quiet || git commit -m "🤖 Training cycle complete"
+        git push origin main
