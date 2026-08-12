@@ -2,13 +2,16 @@ name: Scrape Wikipedia
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
+  workflow_run:
+    workflows: ["Scrape Ping"]
+    types: [completed]
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
@@ -25,3 +28,12 @@ jobs:
         git add data/wordbank.json
         git diff --staged --quiet || git commit -m "📚 Words scraped"
         git push origin main
+    - name: Trigger Scrape Ping
+      if: success()
+      run: |
+        curl -s -X POST \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/workflows/scrape-ping.yml/dispatches" \
+          -d '{"ref":"main"}'
