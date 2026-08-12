@@ -17,7 +17,10 @@
       "definition": "With a comparative or with more and a verb phrase, establishes a correlation with one or more other such comparatives."
     },
     "cratognathus": {},
-    "described": {},
+    "described": {
+      "has_definition": true,
+      "definition": "To represent in words."
+    },
     "species": {
       "has_definition": true,
       "definition": "Type or kind. (Compare race.)"
@@ -89,7 +92,10 @@
       "has_definition": true,
       "definition": "A rock of crystalline limestone."
     },
-    "paneled": {},
+    "paneled": {
+      "has_definition": true,
+      "definition": "To fit with panels."
+    },
     "building": {
       "has_definition": true,
       "definition": "The act or process by which something is built; construction."
@@ -98,31 +104,94 @@
       "has_definition": true,
       "definition": "To shine; to make a surface very smooth or shiny by rubbing, cleaning, or grinding."
     },
-    "listed": {},
+    "listed": {
+      "has_definition": true,
+      "definition": "To create or recite a list."
+    },
     "july": {},
-    "been": {},
-    "office": {},
+    "been": {
+      "has_definition": true,
+      "definition": "A flying insect, of the clade Anthophila within the hymenopteran superfamily Apoidea, known for its organised societies (though only a minority have them), for collecting pollen and (in some species) producing wax and honey."
+    },
+    "office": {
+      "has_definition": true,
+      "definition": "A ceremonial duty or service, particularly:"
+    },
     "paso": {},
-    "built": {},
+    "built": {
+      "has_definition": true,
+      "definition": "To form (something) by combining materials or parts."
+    },
     "beaux": {},
-    "architectural": {},
-    "ornamental": {},
-    "topped": {},
+    "architectural": {
+      "has_definition": true,
+      "definition": "Pertaining to architecture."
+    },
+    "ornamental": {
+      "has_definition": true,
+      "definition": "An ornamental plant."
+    },
+    "topped": {
+      "has_definition": true,
+      "definition": "To cover on the top or with a top."
+    },
     "texas": {},
-    "massive": {},
-    "huge": {},
-    "bronze": {},
-    "register": {},
-    "includes": {},
-    "national": {},
-    "lobby": {},
-    "arts": {},
-    "dome": {},
-    "grills": {},
-    "shaped": {},
-    "saucer": {},
-    "style": {},
-    "community": {},
+    "massive": {
+      "has_definition": true,
+      "definition": "A homogeneous mass of rock, not layered and without an obvious crystal structure."
+    },
+    "huge": {
+      "has_definition": true,
+      "definition": "Very large."
+    },
+    "bronze": {
+      "has_definition": true,
+      "definition": "A naturally occurring or man-made alloy of copper, usually in combination with tin, but also with one or more other metals."
+    },
+    "register": {
+      "has_definition": true,
+      "definition": "A machine that tabulates the amount of sales transactions, makes a permanent and cumulative record of them, and has a drawer in which cash can be kept."
+    },
+    "includes": {
+      "has_definition": true,
+      "definition": "A piece of source code or other content that is dynamically retrieved for inclusion in another item."
+    },
+    "national": {
+      "has_definition": true,
+      "definition": "A subject of a nation."
+    },
+    "lobby": {
+      "has_definition": true,
+      "definition": "An entryway or reception area; vestibule; passageway; corridor."
+    },
+    "arts": {
+      "has_definition": true,
+      "definition": "The conscious production or arrangement of sounds, colours, forms, movements, or other elements in a manner that affects the senses and emotions, usually specifically the production of the beautiful in a graphic or plastic medium."
+    },
+    "dome": {
+      "has_definition": true,
+      "definition": "A structural element resembling the hollow upper half of a sphere; a cupola"
+    },
+    "grills": {
+      "has_definition": true,
+      "definition": "A grating; a grid of wire or a sheet of material with a pattern of holes or slots, usually used to protect something while allowing the passage of air and liquids. Typical uses: to allow air through a fan while preventing fingers or objects from passing; to allow people to talk to somebody, while preventing attack."
+    },
+    "shaped": {
+      "has_definition": true,
+      "definition": "To create or make."
+    },
+    "saucer": {
+      "has_definition": true,
+      "definition": "A small shallow dish to hold a cup and catch drips."
+    },
+    "style": {
+      "has_definition": true,
+      "definition": "Senses relating to a thin, pointed object."
+    },
+    "community": {
+      "has_definition": true,
+      "definition": "A group sharing a common understanding, and often the same language, law, manners, and/or tradition."
+    },
     "bungalow": {},
     "house": {},
     "tennessee": {},
@@ -182,9 +251,125 @@
     "volumes": {},
     "kodansha": {},
     "magazine": {},
-    "scratch": {}
+    "scratch": {},
+    "oxyporinae": {},
+    "oxyporus": {},
+    "staphylinidae": {},
+    "worldwide": {},
+    "subfamily": {},
+    "overall": {},
+    "deferring": {},
+    "second": {},
+    "games": {},
+    "play": {},
+    "grey": {},
+    "ninth": {},
+    "league": {},
+    "due": {},
+    "consecutive": {},
+    "cup": {},
+    "team": {},
+    "world": {},
+    "fifa": {},
+    "ten": {},
+    "toronto": {},
+    "canadian": {},
+    "for": {},
+    "season": {},
+    "their": {},
+    "cats": {},
+    "win": {},
+    "championship": {},
+    "tiger": {},
+    "attempt": {},
+    "football": {},
+    "will": {},
+    "hamilton": {},
+    "cfl": {},
+    "this": {},
+    "qualify": {},
+    "playoffs": {},
+    "argonauts": {},
+    "siberia": {},
+    "fish": {},
+    "ranges": {},
+    "leuciscidae": {},
+    "freshwater": {},
+    "lineage": {},
+    "distributed": {},
+    "west": {},
+    "belonging": {},
+    "daces": {},
+    "finned": {},
+    "known": {},
+    "commonly": {},
+    "eurasian": {},
+    "widely": {},
+    "minnows": {},
+    "europe": {},
+    "which": {},
+    "roaches": {},
+    "leuciscids": {},
+    "east": {},
+    "ray": {},
+    "fishes": {},
+    "related": {},
+    "rutilus": {},
+    "airs": {},
+    "educational": {},
+    "hampshire": {},
+    "center": {},
+    "wpea": {},
+    "radio": {},
+    "serve": {},
+    "trustees": {},
+    "non": {},
+    "campus": {},
+    "located": {},
+    "exeter": {},
+    "commercial": {},
+    "station": {},
+    "phillips": {},
+    "format": {},
+    "owned": {},
+    "elizabeth": {},
+    "variety": {},
+    "studios": {},
+    "academy": {},
+    "new": {},
+    "licensed": {},
+    "tanzania": {},
+    "consists": {},
+    "liberia": {},
+    "neptis": {},
+    "cameroon": {},
+    "western": {},
+    "gabon": {},
+    "congo": {},
+    "north": {},
+    "sailer": {},
+    "scarce": {},
+    "sierra": {},
+    "forests": {},
+    "clubbed": {},
+    "leone": {},
+    "wet": {},
+    "african": {},
+    "nigeria": {},
+    "ghana": {},
+    "nymphalidae": {},
+    "coast": {},
+    "uganda": {},
+    "habitat": {},
+    "nicobule": {},
+    "kenya": {},
+    "central": {},
+    "democratic": {},
+    "butterfly": {},
+    "ivory": {},
+    "republic": {}
   },
-  "total_articles": 4,
-  "total_words": 114,
-  "total_defined": 23
+  "total_articles": 9,
+  "total_words": 230,
+  "total_defined": 46
 }
