@@ -1,0 +1,99 @@
+name: Optimize Model
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Train Pullbot"]
+    types: [completed]
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - name: Install deps
+      run: pip install torch numpy
+    - name: Smart prune + quantize
+      timeout-minutes: 100
+      run: |
+        python -c "
+        import torch, json, os, time
+        
+        print('Loading model...')
+        ckpt = torch.load('models/pullbot_1b.pt', map_location='cpu')
+        config = ckpt['config']
+        
+        sys.path.insert(0, 'src')
+        from model import Pullbot1B
+        model = Pullbot1B(**{k: v for k, v in config.items() if k != 'vocab_size'}, vocab_size=config['vocab_size'])
+        model.load_state_dict(ckpt['model_state'])
+        
+        before = sum(p.numel() for p in model.parameters())
+        print(f'Before: {before:,} params')
+        
+        # Smart prune - merge weak into strong
+        print('Smart pruning...')
+        import torch.nn as nn
+        for name, module in model.named_modules():
+            if isinstance(module, nn.Linear) and module.weight.shape[0] > 100:
+                w = module.weight.data.float()
+                for row in w:
+                    threshold = row.abs().median()
+                    strong = row.abs() > threshold
+                    weak = ~strong
+                    if weak.any() and strong.any():
+                        strong_vals = row[strong]
+                        weak_vals = row[weak]
+                        for i, wi in enumerate(torch.where(weak)[0]):
+                            closest = torch.argmin(torch.abs(strong_vals - weak_vals[i]))
+                            row[torch.where(strong)[0][closest]] += weak_vals[i] * 0.5
+                            row[wi] = 0
+                module.weight.data = w.to(module.weight.dtype)
+        
+        # Remove zero rows
+        print('Removing zeros...')
+        for name, module in list(model.named_modules()):
+            if isinstance(module, nn.Linear) and module.weight.shape[0] > 50:
+                w = module.weight.data
+                active = w.abs().sum(dim=1) > 0.0001
+                if active.sum() < w.shape[0] and active.sum() > 10:
+                    new_lin = nn.Linear(w.shape[1], active.sum().item(), bias=module.bias is not None)
+                    new_lin.weight.data = w[active].clone()
+                    if module.bias is not None:
+                        new_lin.bias.data = module.bias.data[active].clone()
+                    parent_name = '.'.join(name.split('.')[:-1])
+                    attr = name.split('.')[-1]
+                    if parent_name:
+                        parent = dict(model.named_modules()).get(parent_name)
+                        if parent: setattr(parent, attr, new_lin)
+        
+        # Quantize
+        print('Quantizing...')
+        model = torch.quantization.quantize_dynamic(model, {nn.Linear}, dtype=torch.qint8)
+        
+        after = sum(p.numel() for p in model.parameters())
+        print(f'After: {after:,} params ({(1-after/before)*100:.1f}% smaller)')
+        
+        # Save optimized
+        ckpt['model_state'] = model.state_dict()
+        ckpt['optimized'] = True
+        torch.save(ckpt, 'models/pullbot_1b.pt')
+        
+        size_mb = os.path.getsize('models/pullbot_1b.pt') / (1024*1024)
+        print(f'Saved: {size_mb:.1f}MB')
+        "
+    - name: Push
+      run: |
+        git config user.name "Pullbot"
+        git config user.email "pullbot@bot.dev"
+        git add models/pullbot_1b.pt
+        if git diff --staged --quiet; then
+          echo "No changes"
+        else
+          git commit -m "✂️ Optimized model" && git push origin main
+        fi
