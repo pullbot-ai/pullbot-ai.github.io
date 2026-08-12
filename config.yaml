@@ -1,0 +1,27 @@
+model:
+  vocab_size: 50000
+  embed_dim: 1024
+  hidden_dim: 4096
+  num_layers: 24
+  num_heads: 16
+  max_seq_len: 512
+
+training:
+  epochs: 3
+  words_per_epoch: 200
+  learning_rate: 0.0001
+  batch_size: 1
+
+optimization:
+  smart_prune_target: 0.7
+  precision_bits: 8
+  target_size_mb: 50
+
+scraper:
+  wikipedia_articles: 10
+  definitions_per_run: 50
+  max_wordbank_size: 50000
+
+api:
+  ai_provider: "puter.js"
+  model: "gpt-4o-mini"
