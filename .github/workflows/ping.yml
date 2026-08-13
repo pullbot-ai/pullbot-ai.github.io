@@ -2,17 +2,13 @@ name: Ping Pullbot
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Train Pullbot"]
-    types: [completed]
-
 jobs:
   ping:
     runs-on: ubuntu-latest
     permissions:
       actions: write
     steps:
-      - name: Trigger Training
+      - name: Trigger Train
         run: |
           curl -s -X POST \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
