@@ -314,17 +314,44 @@
       "has_definition": true,
       "definition": "A publication that is published once a week."
     },
-    "series": {},
+    "series": {
+      "has_definition": true,
+      "definition": "A number of things that follow on one after the other or are connected one after the other."
+    },
     "january": {},
-    "rewrite": {},
-    "episode": {},
-    "drama": {},
-    "broadcast": {},
-    "decided": {},
-    "earlier": {},
-    "sai": {},
+    "rewrite": {
+      "has_definition": true,
+      "definition": "The act of writing again or anew."
+    },
+    "episode": {
+      "has_definition": true,
+      "definition": "An incident, action, or time period standing out by itself, but more or less connected with a complete series of events."
+    },
+    "drama": {
+      "has_definition": true,
+      "definition": "A composition, normally in prose, telling a story and intended to be represented by actors impersonating the characters and speaking the dialogue"
+    },
+    "broadcast": {
+      "has_definition": true,
+      "definition": "A transmission of a radio or television programme intended to be received by anyone with a receiver."
+    },
+    "decided": {
+      "has_definition": true,
+      "definition": "To resolve (a contest, problem, dispute, etc.); to choose, determine, or settle"
+    },
+    "earlier": {
+      "has_definition": true,
+      "definition": "At a time in advance of the usual or expected event."
+    },
+    "sai": {
+      "has_definition": true,
+      "definition": "A handheld weapon with three prongs, used in some Oriental martial arts."
+    },
     "june": {},
-    "special": {},
+    "special": {
+      "has_definition": true,
+      "definition": "A reduction in consumer cost (usually for a limited time) for items or services rendered."
+    },
     "with": {},
     "adaptation": {},
     "television": {},
@@ -801,9 +828,69 @@
     "peng": {},
     "mills": {},
     "brother": {},
-    "malaya": {}
+    "malaya": {},
+    "pradesh": {},
+    "administrative": {},
+    "division": {},
+    "region": {},
+    "rohilkhand": {},
+    "four": {},
+    "shahjahanpur": {},
+    "units": {},
+    "districts": {},
+    "uttar": {},
+    "geographical": {},
+    "bareilly": {},
+    "pilibhit": {},
+    "headquarters": {},
+    "northern": {},
+    "major": {},
+    "badaun": {},
+    "army": {},
+    "general": {},
+    "diplomat": {},
+    "chief": {},
+    "cathcart": {},
+    "lieutenant": {},
+    "charles": {},
+    "schaw": {},
+    "lord": {},
+    "officer": {},
+    "clan": {},
+    "israeli": {},
+    "relationship": {},
+    "defend": {},
+    "arie": {},
+    "solution": {},
+    "tel": {},
+    "embassy": {},
+    "seychelles": {},
+    "supports": {},
+    "goldstein": {},
+    "relations": {},
+    "honorary": {},
+    "right": {},
+    "itself": {},
+    "accredited": {},
+    "bilateral": {},
+    "during": {},
+    "between": {},
+    "nairobi": {},
+    "gaza": {},
+    "aviv": {},
+    "refer": {},
+    "israel": {},
+    "consul": {},
+    "moravian": {},
+    "south": {},
+    "blansko": {},
+    "czech": {},
+    "municipality": {},
+    "inhabitants": {},
+    "village": {},
+    "district": {}
   },
-  "total_articles": 19,
-  "total_words": 577,
-  "total_defined": 75
+  "total_articles": 23,
+  "total_words": 637,
+  "total_defined": 84
 }
