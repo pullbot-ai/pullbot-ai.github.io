@@ -2,9 +2,8 @@ name: Scrape Ping
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Scrape Wikipedia"]
-    types: [completed]
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   ping:
