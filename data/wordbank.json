@@ -545,27 +545,72 @@
       "has_definition": true,
       "definition": "Descent in a line from a common progenitor; progeny; descending line of offspring or ascending line of parentage."
     },
-    "distributed": {},
-    "west": {},
-    "belonging": {},
+    "distributed": {
+      "has_definition": true,
+      "definition": "To divide into portions and dispense."
+    },
+    "west": {
+      "has_definition": true,
+      "definition": "One of the four principal compass points, specifically 270\u00b0, conventionally directed to the left on maps; the direction of the setting sun at an equinox, abbreviated as W."
+    },
+    "belonging": {
+      "has_definition": true,
+      "definition": "To have its proper place."
+    },
     "daces": {},
-    "finned": {},
-    "known": {},
-    "commonly": {},
+    "finned": {
+      "has_definition": true,
+      "definition": "To cut the fins from a fish, shark, etc."
+    },
+    "known": {
+      "has_definition": true,
+      "definition": "To perceive the truth or factuality of; to be certain of or that."
+    },
+    "commonly": {
+      "has_definition": true,
+      "definition": "As a rule; frequently; usually"
+    },
     "eurasian": {},
     "widely": {},
-    "minnows": {},
+    "minnows": {
+      "has_definition": true,
+      "definition": "A small freshwater fish of the carp family, Phoxinus phoxinus."
+    },
     "europe": {},
-    "which": {},
-    "roaches": {},
+    "which": {
+      "has_definition": true,
+      "definition": "(interrogative) What one or ones (of those mentioned or implied)."
+    },
+    "roaches": {
+      "has_definition": true,
+      "definition": "A cockroach."
+    },
     "leuciscids": {},
-    "east": {},
-    "ray": {},
-    "fishes": {},
-    "related": {},
+    "east": {
+      "has_definition": true,
+      "definition": "One of the four principal compass points, specifically 90\u00b0, conventionally directed to the right on maps; the direction of the rising sun at an equinox. Abbreviated as E."
+    },
+    "ray": {
+      "has_definition": true,
+      "definition": "A beam of light or radiation."
+    },
+    "fishes": {
+      "has_definition": true,
+      "definition": "A cold-blooded vertebrate animal that lives in water, moving with the help of fins and breathing with gills."
+    },
+    "related": {
+      "has_definition": true,
+      "definition": "To tell in a descriptive way."
+    },
     "rutilus": {},
-    "airs": {},
-    "educational": {},
+    "airs": {
+      "has_definition": true,
+      "definition": "The substance constituting earth's atmosphere, particularly:"
+    },
+    "educational": {
+      "has_definition": true,
+      "definition": "A free (or low cost) trip for travel consultants, provided by a travel operator or airline as a means of promoting their service. A fam trip"
+    },
     "hampshire": {},
     "center": {},
     "wpea": {},
@@ -3126,9 +3171,90 @@
     "huntingdon": {},
     "long": {},
     "along": {},
-    "brownsville": {}
+    "brownsville": {},
+    "geological": {},
+    "marquis": {},
+    "antarctica": {},
+    "nebush": {},
+    "surmounts": {},
+    "survey": {},
+    "alexander": {},
+    "vicinity": {},
+    "borislav": {},
+    "nell": {},
+    "nunatak": {},
+    "side": {},
+    "glacier": {},
+    "delius": {},
+    "kamenov": {},
+    "philip": {},
+    "nichols": {},
+    "visited": {},
+    "extending": {},
+    "elgar": {},
+    "pimpirev": {},
+    "uplands": {},
+    "ice": {},
+    "wide": {},
+    "christo": {},
+    "tributary": {},
+    "rising": {},
+    "rocky": {},
+    "snowfield": {},
+    "bengal": {},
+    "parganas": {},
+    "distance": {},
+    "kilometres": {},
+    "chandpara": {},
+    "sealdah": {},
+    "jurisdiction": {},
+    "suburban": {},
+    "bongaon": {},
+    "java": {},
+    "defeating": {},
+    "abbreviated": {},
+    "match": {},
+    "bojonegoro": {},
+    "persibo": {},
+    "afc": {},
+    "indonesian": {},
+    "divisi": {},
+    "tier": {},
+    "piala": {},
+    "playoff": {},
+    "liga": {},
+    "persatuan": {},
+    "semen": {},
+    "relegated": {},
+    "utama": {},
+    "winning": {},
+    "persipura": {},
+    "relegation": {},
+    "sepakbola": {},
+    "nusantara": {},
+    "indonesia": {},
+    "previous": {},
+    "padang": {},
+    "eugene": {},
+    "topeka": {},
+    "brian": {},
+    "pancreatic": {},
+    "pulitzer": {},
+    "roots": {},
+    "photographer": {},
+    "lanker": {},
+    "bout": {},
+    "essay": {},
+    "brief": {},
+    "photography": {},
+    "childbirth": {},
+    "capital": {},
+    "photojournalism": {},
+    "moment": {},
+    "photograph": {},
+    "photo": {}
   },
-  "total_articles": 170,
-  "total_words": 2740,
-  "total_defined": 129
+  "total_articles": 174,
+  "total_words": 2821,
+  "total_defined": 144
 }
