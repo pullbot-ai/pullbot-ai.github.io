@@ -523,7 +523,10 @@
       "has_definition": true,
       "definition": "A final game in a series needed to break a tie."
     },
-    "argonauts": {},
+    "argonauts": {
+      "has_definition": true,
+      "definition": "Any of several species of shelled octopods of the family Argonautidae (of which only the genus Argonauta is not extinct)."
+    },
     "siberia": {},
     "fish": {},
     "ranges": {},
@@ -2355,9 +2358,28 @@
     "carolwood": {},
     "equity": {},
     "motorcycle": {},
-    "brand": {}
+    "brand": {},
+    "danigon": {},
+    "magny": {},
+    "haute": {},
+    "bourgogne": {},
+    "franche": {},
+    "violacellum": {},
+    "tunisia": {},
+    "gelechiidae": {},
+    "pierre": {},
+    "algeria": {},
+    "megacraspedus": {},
+    "neighborhood": {},
+    "hills": {},
+    "portland": {},
+    "route": {},
+    "cedar": {},
+    "metropolitan": {},
+    "designated": {},
+    "oregon": {}
   },
-  "total_articles": 108,
-  "total_words": 1984,
-  "total_defined": 124
+  "total_articles": 111,
+  "total_words": 2003,
+  "total_defined": 125
 }
